@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 
 <body>
@@ -37,15 +38,28 @@
                         <p>Full-Stack Web Developer</p>
                     </div>
                     <div class="social-links">
-                        <ul>
-                            <li>G</li>
-                            <li>L</li>
-                            <li>F</li>
-                            <li>T</li>
-                            <li>I</li>
-                            <li>W</li>
+                        <a href="#"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
                         </ul>
                     </div>
+                </div>
+                <div class="other-details">
+                    <p>Age: <span>22</span></p>
+                    <p>Language: <span>English, Igbo</span></p>
+                    <p>Residence: <span>Awka</span></p>
+                    <p>Country: <span>Nigeria</span></p>
+                </div>
+                <div class="other-details">
+                    <h4>Skills</h4>
+                    <!-- <p>HTML | CSS | Javascript | PHP </p> -->
+                    <p>Html <span>90%</span></p>
+                    <p>Css <span>90%</span></p>
+                    <p>Javascript <span>75%</span></p>
+                    <p>Php <span>85%</span></p>
                 </div>
             </div>
 
@@ -57,9 +71,10 @@
                         <div class="intro-text">
                             <h1>I'm Ebube Anthony Egolum <br> <span> Full-stack</span> Web Developer</h1>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus natus officiis nostrum fuga facere, magni tenetur alias quam voluptatibus ipsa soluta repellendus. Porro, maxime temporibus.</p>
+                            <button><a href="#">Know More <i class="fa-solid fa-arrow-right fa-1x"></i></a></button>
                         </div>
                         <div class="intro-img">
-                            <img src="./assets/img/profile-1.png" alt="">
+                            <img src="./assets/img/profile-5.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -69,7 +84,7 @@
 
             <div class="nav-bar">
                 <div>
-                    da
+                    <p>fdk</p>
                 </div>
             </div>
 

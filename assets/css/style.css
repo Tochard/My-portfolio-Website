@@ -68,6 +68,13 @@ p{
 span{
     color: var(--highlightedTextColor);
 }
+a{
+    text-decoration: none;
+    color: var(--highlightedTextColor);
+}
+
+
+
 
 /* ----BODY---- */
 .container{
@@ -91,7 +98,7 @@ span{
 /* profile */
 .profile {
     background-color: var(--lighterBackgroundColor);
-    padding: 2.5rem 2rem;
+    padding: 3rem 2rem 1rem 2rem;
 }
 .profile .profile-img {
     height: 100px;
@@ -106,6 +113,31 @@ span{
 .profile .desc {
     text-align: center;
 }
+.social-links{
+    margin: 2rem 0;
+    text-align: center;
+}
+.social-links a{
+    text-decoration: none;
+    color: var(--highlightedTextColor);
+    font-size: 2rem;
+    margin: 1rem;
+}
+/* other-details */
+.other-details{
+    padding: 2rem 2rem;
+    border-bottom: 1px solid var(--textColor);
+}
+.other-details p{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.other-details p span{
+    text-align: right;
+}
+
+
 
 
 
@@ -134,16 +166,24 @@ span{
     height: 60vh;
     background-color: rgb(44, 48, 127);
 }
-
 .intro-content{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
-
-.intro-img img{
-    height: 60vh;
-}
 .intro-text{
     padding: 10rem 0rem 10rem 8rem;
-
+}
+.intro-text button{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    background-color: var(--highlightedTextColor);
+    border: none;
+    border-radius: .5rem;
+    
+}
+.intro-text button a{
+    color: #fff;
+}
+.intro-img img {
+    height: 60vh;
 }
