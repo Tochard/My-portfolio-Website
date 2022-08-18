@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+
+/* ----COLORS---- */
+:root {
+    --mainBackgroundColor: #060f18;
+    --backgroundColor: #091523;
+    --lighterBackgroundColor: #182333;
+    --highlightedTextColor: #F7A02D;
+    --headingColor: #F2F2F2;
+    --textColor: #8c8c8e;
+    --hoverColor: #E6E7E9;
+}
+
+.Light {
+    --mainBackgroundColor: #182333;
+    --backgroundColor: #182333;
+    --lighterBackgroundColor: rgba(24, 36, 52, 0.6);
+    --highlightedTextColor: #F7A02D;
+    --textColor: #F2F2F2;
+    --hoverColor: #E6E7E9;
+}
+
+
+
+
+/* ----UNIVERSAL---- */
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--mainBackgroundColor);
+/* font-family: "Poppins", sans-serif; */
+}
+h1, h2, h3, h4, h5, h6{
+    font-family: "Poppins", sans-serif;
+    padding: 1rem 0;
+    color: var(--headingColor);
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2.2rem;
+}
+h4{
+    font-size: 2.0rem;
+}
+h5{
+    font-size: 1.8rem;
+}
+h6{
+    font-size: 1.6rem;
+}
+p{
+    color: var(--textColor);
+    font-size: 1.5rem;
+}
+span{
+    color: var(--highlightedTextColor);
+}
+
+/* ----BODY---- */
+.container{
+    margin: 1.5rem;
+}
+.segments{
+    display: flex;
+    /* position: relative; */
+}
+
+
+
+
+/* ----SIDE-BAR---- */
+.side-bar{
+    background-color: var(--backgroundColor);
+    width: 30rem;
+    height: 100vh;
+    position: fixed;
+}
+/* profile */
+.profile {
+    background-color: var(--lighterBackgroundColor);
+    padding: 2.5rem 2rem;
+}
+.profile .profile-img {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+.profile .profile-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+.profile .desc {
+    text-align: center;
+}
+
+
+
+/* ----NAV-BAR---- */
+.nav-bar{
+    background-color: var(--backgroundColor);
+    width: 8rem;
+    height: 100vh;
+    right: 1.5rem;
+    position: fixed;
+}
+
+
+
+
+/* ----MAIN BODY---- */
+.main-body {
+    background-color: var(--backgroundColor);
+    margin-left: 31.5rem;
+    margin-right: 9.5rem;
+    width: 100%;
+    height: 100vh;
+}
+.introduction{
+    margin: 0;
+    height: 60vh;
+    background-color: rgb(44, 48, 127);
+}
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.intro-img img{
+    height: 60vh;
+}
+.intro-text{
+    padding: 10rem 0rem 10rem 8rem;
+
+}
