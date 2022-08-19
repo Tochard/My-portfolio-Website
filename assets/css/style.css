@@ -29,6 +29,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     font-size: 10px;
@@ -94,7 +95,12 @@ a{
     width: 30rem;
     height: 100vh;
     position: fixed;
+    overflow-y: scroll;
 }
+.side-bar::-webkit-scrollbar {
+    display: none;
+}
+
 /* profile */
 .profile {
     background-color: var(--lighterBackgroundColor);
@@ -114,7 +120,7 @@ a{
     text-align: center;
 }
 .social-links{
-    margin: 2rem 0;
+    margin: 1rem 0;
     text-align: center;
 }
 .social-links a{
@@ -132,11 +138,82 @@ a{
     display: flex;
     justify-content: space-between;
     margin: 1rem 0;
+    color: var(--headingColor);
 }
 .other-details p span{
     text-align: right;
+    color: var(--textColor);
 }
 
+/* skills */
+.skills {
+    width: 100%;
+    /* max-width: 600px; */
+    padding: 2rem 2rem;
+    border-bottom: 1px solid var(--textColor);
+}
+.skills h4{
+    text-align: center;
+}
+.skill-name {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: var(--headingColor);
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.skill-bar {
+    height: .6rem;
+    background: #282828;
+    border-radius: .3rem;
+}
+
+.skill-per {
+    height: .6rem;
+    background: var(--highlightedTextColor);
+    border-radius: 3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+@keyframes fillBars {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* extra-skills */
+.extra-skills{
+    padding: 2rem 2rem;
+    border-bottom: 1px solid var(--textColor);
+}
+.extra-skills p {
+    margin: 1rem 0;
+}
+.extra-skills span{
+    padding-right: 1rem;
+}
+
+/* Download cv */
+.cv-download{
+    padding: 2rem 2rem;
+}
+.cv-download button{
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: var(--highlightedTextColor);
+    border: none;
+    border-radius: .5rem;
+}
+.cv-download button a{
+    color: #fff;
+}
 
 
 
