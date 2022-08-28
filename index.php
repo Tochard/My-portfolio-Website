@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container ">
 
         <div class="segments">
 
@@ -31,7 +31,7 @@
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-square-twitter"></i></i></a>
+                        <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
                         </ul>
                     </div>
@@ -99,33 +99,40 @@
 
 
             <div class="main-body">
-                <div class="introduction">
+                <div class="introduction" id="head">
                     <div class="intro-content">
                         <div class="intro-text">
-                            <h1>Hi, <br>I'm Ebube Anthony Egolum, <br><span>Full-stack</span> Web Developer</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis et eaque, libero distinctio illo hic suscipit doloribus nostrum temporibus sunt.</p>
+                            <h1>Hello, <br>I'm Ebube Anthony Egolum, <br><span>Full-Stack</span> Web Developer</h1>
+                            <p class="typing"><span> &lt;P&gt; </span> Lorem ipsum do dolor sit amet consectetur adipisicing elit. Eaque, ad? ipisicing<span> &lt;P&sol;&gt; </span> </p>
                             <button><a href="#">Know More <i class="fa-solid fa-arrow-right fa-1x"></i></a></button>
                         </div>
-                        <div class="intro-img">
-                            <img src="./assets/img/profile-5.png" alt="">
-                        </div>
+                        <!-- <div class="intro-img">
+                            <img src="./assets/img/profile-6.png" alt="">
+                        </div> -->
                     </div>
                 </div>
 
-                <div class="about section">
-                    <h4>ABOUT ME</h4>
-                    <h6>Know More About Me</h6>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam fugit vero praesentium, exercitationem culpa unde aliquid qui consectetur aliquam dolor perferendis cupiditate voluptate excepturi optio voluptatem reprehenderit neque, sunt non quas! Voluptates, consequatur facilis culpa iusto</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque, exercitationem sequi eaque fugiat debitis asperiores, molestias itaque, eos amet quos nihil sint suscipit vero perspiciatis iure omnis similique temporibus?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates tempora porro cumque harum eum?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, labore. At sint delectus eligendi aliquam, tempore quisquam? Laudantium nam incidunt nostrum expedita vero porro, velit facilis ut eveniet iste! Doloribus voluptatibus distinctio aut adipisci maiores reiciendis incidunt, rerum quasi impedit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque, exercitationem sequi eaque fugiat debitis asperiores, molestias itaque, eos amet quos nihil sint suscipit vero perspiciatis iure omnis similique temporibus?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates tempora porro cumque harum eum?</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, labore. At sint delectus eligendi aliquam, tempore quisquam? Laudantium nam incidunt nostrum expedita vero porro, velit facilis ut eveniet iste! Doloribus voluptatibus distinctio aut adipisci maiores reiciendis incidunt, rerum quasi impedit.</p>
+                <div class="about section" id="about">
+                    <div class="abt">
+                        <h2>ABOUT ME</h2>
+                        <h6>Know More About Me</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae numquam fugit vero praesentium, exercitationem culpa unde aliquid qui consectetur aliquam dolor perferendis cupiditate voluptate excepturi optio voluptatem reprehenderit neque, sunt non quas! Voluptates, consequatur facilis culpa iusto</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non doloremque, exercitationem sequi eaque fugiat debitis asperiores, molestias itaque, eos amet quos nihil sint suscipit vero perspiciatis iure omnis similique temporibus?</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque voluptates tempora porro cumque harum eum?</p>
+                        <br>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil, labore. At sint delectus eligendi aliquam, tempore quisquam? Laudantium nam incidunt nostrum expedita vero porro, velit facilis ut eveniet iste! Doloribus voluptatibus distinctio aut adipisci maiores reiciendis incidunt, rerum quasi impedit.</p>
+
+                    </div>
+                    <div class="abt-img">
+                        <img src="./assets/img/profile.jpg" alt="">
+                    </div>
+
                 </div>
 
-                <div class="resume section">
-                    <h4>MY RESUME</h4>
+                <div class="resume section" id="resume">
+                    <h2>MY RESUME</h2>
                     <!-- <h6>Know More About Me</h6> -->
                     <br>
                     <br>
@@ -237,75 +244,95 @@
 
                     <br>
                     <br>
-
+                    <br>
+                    <div class="cv-download resume-download">
+                        <button><a href="egolum.pdf"><i class="fa-solid fa-download"></i> Download CV </a></button>
+                    </div>
                 </div>
 
-                <div class="portfolio section">
-                    <h4>Portfolio</h4>
+                <div class="portfolio section" id="project">
+                    <h2>PORTFOLIO</h2>
                     <h6>Some Recent Projects</h6>
 
                     <div class="projects">
 
                         <div class="project">
-
+                            <div class="pro-name">
+                                <h6> <span>.01</span> Courier Management Website</h6>
+                            </div>
+                            <div class="pro-img">
+                                <img src="./assets/img/project/cou.jpg" alt="project image">
+                            </div>
+                            <div class="pro-links">
+                                <a href="#">Live Site</a>
+                                <a href="#">Source Code</a>
+                            </div>
                         </div>
                         <div class="project">
-
+                            <div class="pro-name">
+                                <h6> <span>.02</span> TchatApp</h6>
+                            </div>
+                            <div class="pro-img">
+                                <img src="./assets/img/project/tchat-1.jpg" alt="project image">
+                            </div>
+                            <div class="pro-links">
+                                <a href="#">Live Site</a>
+                                <a href="#">Source Code</a>
+                            </div>
                         </div>
                         <div class="project">
-
+                            <div class="pro-name">
+                                <h6> <span>.03</span> Evich Stores</h6>
+                            </div>
+                            <div class="pro-img">
+                                <img src="./assets/img/project/evich.jpg" alt="project image">
+                            </div>
+                            <div class="pro-links">
+                                <a href="#">Live Site</a>
+                                <a href="#">Source Code</a>
+                            </div>
                         </div>
-                        <div class="project">
 
-                        </div>
-                        <div class="project">
-
-                        </div>
-                        <div class="project">
-
-                        </div>
 
                     </div>
                 </div>
 
-                <div class="testimonials section">
-                    <h4>Recommendation</h4>
-                    <h6>Some Testimonials</h6>
+                <div class="testimonials section" id="testimonials">
+                    <h2>TESTIMONIALS</h2>
+                    <h6>Our Clients Words</h6>
                     <div class="testi">
 
                         <div class="test">
                             <div class="test-text">
-                                <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-quote-left"></i>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui neque officia deserunt. Libero veritatis, distinctio nisi quisquam iusto quod placeat, rerum quos explicabo deserunt nostrum</p>
                                 <h6>Lorem ipsum dolor</h6>
                             </div>
                             <div class="test-img">
-                                <img src="#" alt="Img">
+                                <img src="./assets/img/11.png" alt="Img">
                             </div>
                         </div>
 
                         <div class="test">
                             <div class="test-text">
-                                <i class="fa-solid fa-check"></i>
+                                <i class="fa-solid fa-quote-left"></i>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis qui neque officia deserunt. Libero veritatis, distinctio nisi quisquam iusto quod placeat, rerum quos explicabo deserunt nostrum </p>
                                 <h6>Lorem ipsum dolor</h6>
                             </div>
                             <div class="test-img">
-                                <img src="#" alt="Img">
+                                <img src="./assets/img/11.png" alt="Img">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="contact section">
-                    <h4>Contact Us</h4>
-                    <h6>Get In Touch With Us</h6>
+                <div class="contact section" id="contact">
+                    <!-- <h4>Contact Us</h4> -->
+                    <!-- <h6>Get In Touch With Us</h6> -->
                     <div class="cont">
-                        <div class="cont-detail">
-                            <h6>cotact info</h6>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, dolor!</p>
-                        </div>
                         <div class="cont-form">
+                            <h2>GET IN TOUCH</h2>
+                            <p>Leave your information here.</p>
                             <form action="#">
                                 <input type="text" name="name" class="input" placeholder="Name" required>
                                 <input type="text" name="email" class="input" placeholder="Email" required>
@@ -314,6 +341,21 @@
                                 <button name="send">Send Mail</button>
                             </form>
                         </div>
+                        <div class="cont-detail">
+                            <h2>CONTACT INFO</h2>
+                            <p>Do you have any Project or opportunity? Kindly don't delay to connect to us via:</p>
+                            <div class="ct-details">
+                                <p><span><i class="fa-brands fa-square-whatsapp"></i></span> +234 816 9021 239</p>
+                                <p><span><i class="fa-brands fa-square-whatsapp"></i></span> +234 816 9021 239</p>
+                                <p><span><i class="fa-brands fa-square-whatsapp"></i></span> egolumaer@gmail.com <br>tochardcp@gmail.com</p>
+                                <p><span><i class="fa-brands fa-linkedin"></i></span> linkedin.com/egolumanthony</p>
+                                <p><span><i class="fa-brands fa-square-github"></i></span> github.com/tochard</p>
+                                <p><span><i class="fa-brands fa-square-facebook"></i></span> Anthony Egolum</p>
+                                <p><span><i class="fa-brands fa-square-twitter"></i></span> Anthony Ebube Egolum</p>
+                                <p><span><i class="fa-brands fa-square-instagram"></i></span> Anthony Ebube Egolum</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -334,13 +376,13 @@
                 </div>
 
                 <div class="navs">
-                    <div class='nav'><a href="#"><i class="fa-solid fa-house"></i></a></div>
-                    <div class='nav'><a href="#"><i class="fa-solid fa-user"></i></a></div>
-                    <div class='nav'><a href="#"><i class="fa-solid fa-file-lines"></i></a></div>
-                    <div class='nav'><a href="#"><i class="fa-solid fa-laptop-code"></i></a></div>
-                    <div class='nav'><a href="#"><i class="fa-solid fa-folder"></i></a></div>
-                    <div class='nav'><a href="#"><i class="fa-solid fa-comment"></i></a></div>
-                    <div class='nav'><a href="#"><i class="fa-solid fa-address-card"></i></a></div>
+                    <div class='nav'><a href="#head"><i class="fa-solid fa-house"></i></a></div>
+                    <div class='nav'><a href="#about"><i class="fa-solid fa-user"></i></a></div>
+                    <div class='nav'><a href="#resume"><i class="fa-solid fa-file-lines"></i></a></div>
+                    <div class='nav'><a href="#project"><i class="fa-solid fa-laptop-code"></i></a></div>
+                    <!-- <div class='nav'><a href="#"><i class="fa-solid fa-folder"></i></a></div> -->
+                    <div class='nav'><a href="#testimonials"><i class="fa-solid fa-comment"></i></a></div>
+                    <div class='nav'><a href="#contact"><i class="fa-solid fa-address-card"></i></a></div>
 
                 </div>
             </div>
