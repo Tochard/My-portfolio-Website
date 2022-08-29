@@ -59,7 +59,7 @@
 
 @media (max-width: 800px) {
     html{
-        font-size: 10px;
+        font-size: 8px;
     }
     .resume-details {
         display: block;
@@ -73,7 +73,7 @@
             font-size: 3.5rem;
         }
         .typing{
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
 
 }
