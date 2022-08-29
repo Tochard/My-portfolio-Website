@@ -2,8 +2,8 @@
     .side-bar{
         display: none;
         width: 100%;
-        z-index: 2000;
-        height: 85vh;
+        z-index: 50000;
+        height: 90vh;
         margin: -.5rem -1.5rem;
     }
     .main-body{
