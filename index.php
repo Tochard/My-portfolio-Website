@@ -7,16 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsivestyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 
 <body>
-    <div class="container ">
+    <div class="container">
+        <div class="top-nav">
+            <div class="top-nav-img" id="profile"><img src="./assets/img/profile-4.png" alt=""><i class="fa-solid fa-caret-down"></i></div>
+            <div class="top-nav-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
 
         <div class="segments">
 
 
-            <div class="side-bar">
+            <div class="side-bar" id="side-bar">
                 <div class="profile">
                     <div class="profile-img">
                         <img src="./assets/img/profile-4.png" alt="profile-img">
@@ -103,7 +108,7 @@
                     <div class="intro-content">
                         <div class="intro-text">
                             <h1>Hello, <br>I'm Ebube Anthony Egolum, <br><span>Full-Stack</span> Web Developer</h1>
-                            <p class="typing"><span> &lt;P&gt; </span> Lorem ipsum do dolor sit amet consectetur adipisicing elit. Eaque, ad? ipisicing<span> &lt;P&sol;&gt; </span> </p>
+                            <p class="typing"><span> &lt;Code&gt; </span>EFFICIENT, APPROPRIATE AND EFFECTIVE<span> &lt;Code&sol;&gt; </span> </p>
                             <button><a href="#">Know More <i class="fa-solid fa-arrow-right fa-1x"></i></a></button>
                         </div>
                         <!-- <div class="intro-img">
@@ -156,98 +161,107 @@
                     <br>
                     <p>Self taught Software Engineer student with a background in Engineering. Possess strong skills in problem solving, communication and collaboration that leads to quality products and results. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda minima tempora consequuntur sunt placeat debitis ducimus impedit, quia suscipit eius quae quasi dolores sequi praesentium dolore error officia qui nihil non nam vero accusamus illo. Vel ad consequuntur modi natus.</p>
 
-                    <br>
-                    <br>
 
-                    <h6>TECHNICAL SKILLS</h6>
-                    <br>
-                    <div class="resume-details">
-                        <div>
-                            <p><span>Languages:</span> PHP,Javascript, CSS, HTML</p>
-                            <p><span>Databases:</span> SQL, MySQL</p>
+                    <div id="myDIV">
+                        <br>
+                        <br>
+                        <h6>TECHNICAL SKILLS</h6>
+                        <br>
+                        <div class="resume-details">
+                            <div>
+                                <p><span>Languages:</span> PHP,Javascript, CSS, HTML</p>
+                                <p><span>Databases:</span> SQL, MySQL</p>
+                            </div>
+                            <div>
+                                <p><span>Version Control:</span> Git, GitHub</p>
+                                <p><span>Tools:</span> VS Code, PhpStorm, XAMPP</p>
+                            </div>
                         </div>
-                        <div>
-                            <p><span>Version Control:</span> Git, GitHub</p>
-                            <p><span>Tools:</span> VS Code, PhpStorm, XAMPP</p>
+
+                        <br>
+                        <br>
+
+                        <h6>TECHNICAL PROJECTS</h6>
+                        <br>
+                        <p><span>Web-Based Chat Application</span>- GitHub: github.com/Tochard/Web-Based-Chat-Application | Live Site: https://web-based-chat-application-1.herokuapp.com/</p>
+                        <p>A chat web application allows signed up users to message each other.</p>
+                        <p>
+                            <i class="fa-solid fa-check"></i> Used MySQL, SQL and PhpMyadmin to create a database in the backend.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used Ajax to get data from the database.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used php time function and session to automatically logout idle users.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Engineered controlled forms for user login, sign-up, user recommendations and feedback messages.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used CSS for styling.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Deployed with Heroku.
+                        </p>
+                        <br>
+                        <p><span>Courier Website</span> - GitHub: github.com/Tochard/Courier-Website | Live Site: https://courier-website-1.herokuapp.com/</p>
+                        <p>A courier website where admin can register packages for delivery and clients using a unique tracking ID can track their package.</p>
+                        <p>
+                            <i class="fa-solid fa-check"></i> Used MySQL, SQL and PhpMyadmin to create a database in the backend.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used php uniqid function to generate tracking ID.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used CSS for styling.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Deployed with Heroku.
+                        </p>
+                        <br>
+                        <p><span>Simple Shopping Cart</span>- GitHub: github.com/Tochard/Simple-Shopping-Cart</p>
+                        <p>A simple shopping cart, it has a simple admin dashboard to add items . It also allows users to add products to their cart for processing and payments.</p>
+                        <p>
+                            <i class="fa-solid fa-check"></i> Used MySQL, SQL and PhpMyadmin to create a database in the backend.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used Php session function to display the number of items in the cart.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Used CSS for styling.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <h6>PROFESSIONAL EXPERIENCE</h6>
+                        <br>
+                        <p>
+                            <i class="fa-solid fa-check"></i> Applied computer science data structures and algorithms to solve computational problems ensuring the data flow within a finite amount of space and time.
+                            <br>
+                            <i class="fa-solid fa-check"></i> Gained hands-on experience with PHP, JavaScript, CSS, HTML, MySQL and tech principles whilst working on team/individual projects, code reviews, and pair programming sessions.
+                        </p>
+
+                        <br>
+                        <br>
+
+                        <h6>EDUCATION</h6>
+                        <br>
+                        <div class="resume-details">
+                            <div>
+                                <p><span>Nnamdi Azikiwe University</span></p>
+                                <p><span></span>Undergraduate (Mechanical Engineering)</p>
+                            </div>
+                            <div>
+                                <p><span></span>Anambra State, Nigeria</p>
+                                <p><span></span>Expected Graduation: December, 2022</p>
+                            </div>
                         </div>
+
+                        <br>
+                        <br>
+                        <br>
+
                     </div>
-
-                    <br>
-                    <br>
-
-                    <h6>TECHNICAL PROJECTS</h6>
-                    <br>
-                    <p><span>Web-Based Chat Application</span>- GitHub: github.com/Tochard/Web-Based-Chat-Application | Live Site: https://web-based-chat-application-1.herokuapp.com/</p>
-                    <p>A chat web application allows signed up users to message each other.</p>
-                    <p>
-                        <i class="fa-solid fa-check"></i> Used MySQL, SQL and PhpMyadmin to create a database in the backend.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used Ajax to get data from the database.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used php time function and session to automatically logout idle users.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Engineered controlled forms for user login, sign-up, user recommendations and feedback messages.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used CSS for styling.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Deployed with Heroku.
-                    </p>
-                    <br>
-                    <p><span>Courier Website</span> - GitHub: github.com/Tochard/Courier-Website | Live Site: https://courier-website-1.herokuapp.com/</p>
-                    <p>A courier website where admin can register packages for delivery and clients using a unique tracking ID can track their package.</p>
-                    <p>
-                        <i class="fa-solid fa-check"></i> Used MySQL, SQL and PhpMyadmin to create a database in the backend.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used php uniqid function to generate tracking ID.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used CSS for styling.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Deployed with Heroku.
-                    </p>
-                    <br>
-                    <p><span>Simple Shopping Cart</span>- GitHub: github.com/Tochard/Simple-Shopping-Cart</p>
-                    <p>A simple shopping cart, it has a simple admin dashboard to add items . It also allows users to add products to their cart for processing and payments.</p>
-                    <p>
-                        <i class="fa-solid fa-check"></i> Used MySQL, SQL and PhpMyadmin to create a database in the backend.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used Php session function to display the number of items in the cart.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Used CSS for styling.
-                    </p>
-
-                    <br>
-                    <br>
-
-                    <h6>PROFESSIONAL EXPERIENCE</h6>
-                    <br>
-                    <p>
-                        <i class="fa-solid fa-check"></i> Applied computer science data structures and algorithms to solve computational problems ensuring the data flow within a finite amount of space and time.
-                        <br>
-                        <i class="fa-solid fa-check"></i> Gained hands-on experience with PHP, JavaScript, CSS, HTML, MySQL and tech principles whilst working on team/individual projects, code reviews, and pair programming sessions.
-                    </p>
-
-                    <br>
-                    <br>
-
-                    <h6>EDUCATION</h6>
-                    <br>
-                    <div class="resume-details">
-                        <div>
-                            <p><span>Nnamdi Azikiwe University</span></p>
-                            <p><span></span>Undergraduate (Mechanical Engineering)</p>
-                        </div>
-                        <div>
-                            <p><span></span>Anambra State, Nigeria</p>
-                            <p><span></span>Expected Graduation: December, 2022</p>
-                        </div>
+                    <div class="btn-read">
+                        <button class="read-more" id="read-more">Read more >>></button>
                     </div>
-
-                    <br>
                     <br>
                     <br>
                     <div class="cv-download resume-download">
                         <button><a href="egolum.pdf"><i class="fa-solid fa-download"></i> Download CV </a></button>
                     </div>
+
                 </div>
 
                 <div class="portfolio section" id="project">
@@ -286,6 +300,42 @@
                             </div>
                             <div class="pro-img">
                                 <img src="./assets/img/project/evich.jpg" alt="project image">
+                            </div>
+                            <div class="pro-links">
+                                <a href="#">Live Site</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="pro-name">
+                                <h6> <span>.04</span> Chellins Group</h6>
+                            </div>
+                            <div class="pro-img">
+                                <img src="./assets/img/project/chellins.jpg" alt="project image">
+                            </div>
+                            <div class="pro-links">
+                                <a href="#">Live Site</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="pro-name">
+                                <h6> <span>.05</span> Cenuel Construction</h6>
+                            </div>
+                            <div class="pro-img">
+                                <img src="./assets/img/project/cenuel.jpg" alt="project image">
+                            </div>
+                            <div class="pro-links">
+                                <a href="#">Live Site</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="pro-name">
+                                <h6> <span>.06</span> Portfolio Website</h6>
+                            </div>
+                            <div class="pro-img">
+                                <img src="./assets/img/project/portfolio.jpg" alt="project image">
                             </div>
                             <div class="pro-links">
                                 <a href="#">Live Site</a>
@@ -342,17 +392,17 @@
                             </form>
                         </div>
                         <div class="cont-detail">
-                            <h2>CONTACT INFO</h2>
+                            <h2>LET'S CONNECT</h2>
                             <p>Do you have any Project or opportunity? Kindly don't delay to connect to us via:</p>
                             <div class="ct-details">
-                                <p><span><i class="fa-brands fa-square-whatsapp"></i></span> +234 816 9021 239</p>
-                                <p><span><i class="fa-brands fa-square-whatsapp"></i></span> +234 816 9021 239</p>
-                                <p><span><i class="fa-brands fa-square-whatsapp"></i></span> egolumaer@gmail.com <br>tochardcp@gmail.com</p>
-                                <p><span><i class="fa-brands fa-linkedin"></i></span> linkedin.com/egolumanthony</p>
-                                <p><span><i class="fa-brands fa-square-github"></i></span> github.com/tochard</p>
-                                <p><span><i class="fa-brands fa-square-facebook"></i></span> Anthony Egolum</p>
-                                <p><span><i class="fa-brands fa-square-twitter"></i></span> Anthony Ebube Egolum</p>
-                                <p><span><i class="fa-brands fa-square-instagram"></i></span> Anthony Ebube Egolum</p>
+                                <p><a href="#"><span><i class="fa-solid fa-square-phone-flip"></i></span> +234 816 9021 239</a></p>
+                                <p><a href="#"><span><i class="fa-brands fa-square-whatsapp"></i></span> +234 816 9021 239</a></p>
+                                <p><a href="#"><span><i class="fa-solid fa-square-envelope"></i></span> egolumaer@gmail.com</a></p>
+                                <p><a href="#"><span><i class="fa-brands fa-linkedin"></i></span> linkedin.com/egolumanthony</a></p>
+                                <p><a href="#"><span><i class="fa-brands fa-square-github"></i></span> github.com/tochard</a></p>
+                                <p><a href="#"><span><i class="fa-brands fa-square-facebook"></i></span> Anthony Egolum</a></p>
+                                <p><a href="#"><span><i class="fa-brands fa-square-twitter"></i></span> Anthony Ebube Egolum</a></p>
+                                <p><a href="#"><span><i class="fa-brands fa-square-instagram"></i></span> Anthony Ebube Egolum</a></p>
                             </div>
                         </div>
 
@@ -390,6 +440,8 @@
         </div>
 
     </div>
+
+    <script src="./assets/js/index.js" type="text/javascript"></script>
 </body>
 
 </html>
