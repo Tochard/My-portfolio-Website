@@ -106,7 +106,7 @@ h6 {
 
 p {
     color: var(--textColor);
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 span {
@@ -394,12 +394,6 @@ a {
 .section h2{
     color: var(--highlightedTextColor);
 }
-/* .section{
-    text-align: center;
-
-} */
-
-
 
 
 
