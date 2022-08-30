@@ -30,13 +30,34 @@ profile.addEventListener('click', function(e){
 
 var menu = document.getElementById("menu");
 var mobileNavs = document.getElementById("mobile-navs");
+
 menu.addEventListener('click', function(e){
+  
     if (mobileNavs.style.display === "block") {
     mobileNavs.style.display = "none";
   } else {
     mobileNavs.style.display = "block";
+
   }
 });
+
+// var menu = document.getElementById("menu");
+// var bars = document.getElementById("bars");
+// var cancel = document.getElementById("cancel");
+// menu.addEventListener('click', function(e){
+  
+//     if (bars.style.display === "none") {
+//     bars.style.display = "block";
+//     cancel.style.display = "none";
+//   } else {
+//     cancel.style.display = "block";
+//     bars.style.display = "none";
+
+//   }
+// });
+
+
+
 
 
 var home = document.getElementById("home-nav");

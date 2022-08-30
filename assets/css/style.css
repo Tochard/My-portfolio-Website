@@ -344,8 +344,12 @@ a {
 .top-nav{
     display: none;
 }
-
-
+#cancel{
+    display: none;
+}
+#bars{
+    display: block;
+}
 
 
 /* introduction */
