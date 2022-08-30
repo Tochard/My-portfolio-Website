@@ -344,6 +344,10 @@ a {
 .top-nav{
     display: none;
 }
+
+
+
+
 /* introduction */
 .introduction {
     margin: 0;
@@ -474,14 +478,14 @@ a {
     text-align: right;
 }
 .read-more{
-    background-color: transparent;
-    border: none;
     cursor: pointer;
     color: var(--highlightedTextColor);
     padding-left: 1rem;
     font-size: 1.5rem;
     
 }
+
+
 
 
 
