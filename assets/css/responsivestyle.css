@@ -120,4 +120,19 @@
     .about {
         padding: 3rem;
     }
+    .resume {
+        padding: 3rem;
+    }
+    .portfolio {
+        padding: 3rem;
+    }
+    .testimonials {
+        padding: 3rem;
+    }
+    .cont-form {
+        margin: 2.5rem;
+    }
+    .cont-detail {
+        margin: 2.5rem;
+    }
 }
