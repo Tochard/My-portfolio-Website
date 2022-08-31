@@ -1,3 +1,40 @@
+var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+event.preventDefault();
+var status = document.getElementById("my-form-status");
+var data = new FormData(event.target);
+fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+        'Accept': 'application/json'
+    }
+}).then(response => {
+    if (response.ok) {
+        status.innerHTML = "Message Successfully Sent! Thank You !!!";
+        form.reset()
+    } else {
+        response.json().then(data => {
+            if (Object.hasOwn(data, 'errors')) {
+                status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            } else {
+                status.innerHTML = "Oops! There was a problem submitting your form"
+            }
+        })
+    }
+}).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+});
+}
+form.addEventListener("submit", handleSubmit)
+
+
+
+
+
+
+
 var showContent = document.getElementById("myDIV");
 var readMore = document.getElementById("read-more");
 
@@ -7,7 +44,7 @@ readMore.addEventListener('click', function(e){
     readMore.innerHTML = 'Read More >>>';
   } else {
     showContent.style.display = "block";
-    readMore.innerHTML = 'See less';
+    readMore.innerHTML = 'Read less';
   }
 });
 

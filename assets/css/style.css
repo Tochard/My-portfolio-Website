@@ -11,7 +11,7 @@
     --lighterBackgroundColor: #182333;
     --highlightedTextColor: #F7A02D;
     --headingColor: #F2F2F2;
-    --textColor: #8c8c8e;
+    --textColor: #acacac;
     --hoverColor: #E6E7E9;
     --gradient1: rgba(9, 21, 35, 0.8);
     --gradient2: rgba(24, 35, 51, 0.8);
@@ -32,19 +32,7 @@
     --gradient3: rgba(242, 242, 242, 0.8);
     --gradient4: rgba(224, 224, 230, 0.8);;
 }
-/* .Light {
-    --jp-carousel-primary-color: #fff;
-        --jp-carousel-primary-subtle-color: #999;
-        --jp-carousel-bg-color: #000;
-        --jp-carousel-bg-faded-color: #222;
-        --jp-carousel-border-color: #3a3a3a;
-    --mainBackgroundColor: #182333;
-    --backgroundColor: #182333;
-    --lighterBackgroundColor: rgba(24, 36, 52, 0.6);
-    --highlightedTextColor: #F7A02D;
-    --textColor: #F2F2F2;
-    --hoverColor: #E6E7E9;
-} */
+
 
 
 
@@ -65,7 +53,6 @@ body {
     /* font-family: 'Orbitron', sans-serif; */
     font-family: 'Oxanium', cursive;
     background-color: var(--mainBackgroundColor);
-    /* font-family: "Poppins", sans-serif; */
 }
 
 h1,
@@ -74,7 +61,6 @@ h3,
 h4,
 h5,
 h6 {
-    /* font-family: "Poppins", sans-serif; */
     padding: 1rem 0;
     color: var(--headingColor);
 }
@@ -264,9 +250,9 @@ a {
     border-radius: .5rem;
     transition: all 1.2s ease;
 }
-.cv-download button:hover{
+/* .cv-download button:hover{
     background-color: var(--lighterBackgroundColor);
-}
+} */
 .cv-download button a {
     color: #fff;
 }
@@ -306,21 +292,40 @@ a {
 }
 .navs .nav {
     font-size: 2rem;
-    margin: 3rem 0;
+    margin: 3.5rem 0;
+    position: relative;
 }
 .navs a {
     color: var(--textColor);
     transition: color 1.2s ease;
 }
-/* .navs .nav .show span{
-    display: inline-block;
-    font-size: 1.3rem;
-    display: inline-block;
-    background-color: white;
-    padding: .5rem 1rem;
-    border-radius: .5rem;
-    margin-bottom: .5rem;
-} */
+
+
+.nav:hover::before {
+    content: attr(per);
+    position: absolute;
+    padding: .4rem .6rem;
+    background: var(--textColor);
+    color: var(--backgroundColor);
+    font-weight: bold;
+    border-radius: .4rem;
+    font-size: 1.2rem;
+    top: -3rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+.nav:hover::after {
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background: var(--textColor);
+    top: -1.3rem;
+    right: 50%;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: .2rem;
+}
 
 .navs a:hover {
     color: var(--highlightedTextColor);
@@ -368,7 +373,7 @@ a {
     padding: 6rem;
 }
 .typing{
-    animation: type 5s steps(48) infinite;
+    animation: type 10s steps(48) infinite;
     overflow: hidden;
     width: 48ch;
     border-right: 1px solid #fff;
@@ -430,14 +435,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* padding-top: 2rem; */
     margin: auto;
     position: relative;
     z-index: 2;
+    animation: zoomOutIn 10s ease-in infinite;
+    transform: scale(1.08);
 }
 .abt-img::before{
     content: "";
-    /* background-color: var(--lighterBackgroundColor); */
     border: .4rem solid var(--highlightedTextColor);
     border-radius: 1rem;
     position: absolute;
@@ -518,7 +523,21 @@ a {
     background-color: var(--backgroundColor);
     padding: 1rem;
     border-radius: 1rem;
-    /* border-radius: 1rem; */
+}
+.project:hover{
+    animation: zoomOutIn 1.2s ease;
+    transform: scale(1.08);
+}
+@keyframes zoomOutIn{
+    0%{
+    }
+    50%{
+        transform: scale(0.95);
+        opacity: 0.9;
+    }
+    100%{
+        transform: scale(1.08);
+    }
 }
 .project h6{
     /* text-align: center; */
@@ -576,8 +595,7 @@ a {
 }
 .testi{
     display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
     margin-top: 4rem;
 }
 .test{
@@ -587,6 +605,10 @@ a {
     position: relative;
     min-height: 23rem;
     border-radius: 1rem;
+}
+.test:hover{
+    animation: zoomOutIn 1.2s ease;
+        transform: scale(1.08);
 }
 .test-text i{
     margin-top: 4rem;
@@ -615,8 +637,9 @@ a {
 .test h6{
     text-align: center;
 }
-
-
+.test h6 span{
+    font-size: 1.2rem;
+}
 
 /* contact */
 
