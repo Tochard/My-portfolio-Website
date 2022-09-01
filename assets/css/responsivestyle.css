@@ -3,8 +3,9 @@
         display: none;
         width: 100%;
         z-index: 50000;
-        height: 88vh;
+        min-height: 88vh;
         margin: -1rem -1.5rem;
+        padding-bottom: 20rem;
     }
     .main-body{
         margin: 0;
