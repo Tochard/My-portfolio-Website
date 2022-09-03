@@ -702,7 +702,7 @@ a {
     width: 100%;
     /* height: 4rem; */
     font-size: 15px ;
-    padding: 2rem 2rem;
+    padding: 1.5rem 2rem;
     margin: 1.5rem 0;
     background-color: var(--lighterBackgroundColor);
     border: none;
@@ -711,9 +711,9 @@ a {
 }
 .cont-form textarea {
     width: 100%;
-    height: 10rem;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+    height: 12rem;
+    font-size: 15px;
+    padding: 1.5rem 2rem;
     margin: 1.5rem 0;
     background-color: var(--lighterBackgroundColor);
     border: none;
